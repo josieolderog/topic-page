@@ -2,6 +2,7 @@ html {
     font-size: 62.5%;
 }
 body {
+    height: 98vh;
     font-size: 1.6rem;
     font-family: "monarcha", serif;
     font-weight: 400;
@@ -30,8 +31,8 @@ img {
 
 /*--
 Document Styles --*/
-nav{
-    background-color: #222;
+nav, footer{
+    background-color: #976534f0;
     color: #76c3e6;
     display: flex;
     justify-content: space-between;
