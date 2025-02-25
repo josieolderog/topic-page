@@ -1,13 +1,14 @@
 html {
     font-size: 62.5%;
 }
-body {
+body, p {
     height: 98vh;
     font-size: 1.6rem;
-    font-family: "monarcha", serif;
+    font-family: "serenity", sans-serif;
     font-weight: 400;
     font-style: normal;
     line-height: 1.15;
+    color: #e6b476;
 }
 h1 {font-size: 3.6rem;}
 h2 {font-size: 3.0rem;}
@@ -17,7 +18,7 @@ h5 {font-size: 1.8rem;}
 h6 {font-size: 1.6rem;}
 
 h1, h2, h3, h4, h5, h6 {font-weight: 600;
-    font-family: "serenity", sans-serif;
+    font-family: "Monarcha", serif;
     font-weight: 300;
     font-style: normal;
 }
@@ -31,9 +32,10 @@ img {
 
 /*--
 Document Styles --*/
+
 nav, footer{
     background-color: #976534f0;
-    color: #76c3e6;
+    color: #e6b476;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,6 +57,20 @@ nav img {
     height: 60px;
     width: auto;
 }
+section {
+    display: grid;
+}
+section.odd {
+    grid-template-columns: 8fr 4fr;
+}
+section.even {
+    grid-template-columns: 4fr 8fr;
+}
+div.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 /*-- Media Queries --*/
 
@@ -62,6 +78,11 @@ nav img {
     nav {
         flex-direction: column;
         gap: 2rem;
-
+    }
+    section.even, section.odd {
+        grid-template-columns: 1fr;
+        section.even div.poster {
+            order: -1;
+        }
     }
 }
