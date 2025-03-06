@@ -1,3 +1,28 @@
+:root {
+    --bg: #f4dcc7;
+    --lbg: #ffefe17b;
+    --fg: #acae62;
+    --acc: #d24a0d;
+    --head: "Monarcha"
+    --body: "Serenity"
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:link {
+
+}
+a:visited {
+
+}
+a:hover {
+
+}
+a:active {
+
+}
 html {
     font-size: 62.5%;
 }
@@ -9,6 +34,7 @@ body, p {
     font-style: normal;
     line-height: 1.15;
     color: #976534f0;
+    color: var(--acc)
 }
 h1 {font-size: 3.6rem;}
 h2 {font-size: 3.0rem;}
@@ -21,6 +47,8 @@ h1, h2, h3, h4, h5, h6 {font-weight: 600;
     font-family: "Monarcha", serif;
     font-weight: 300;
     font-style: normal;
+    color: var(--acc);
+    text-spacing-trim: auto;
 }
 
 img {
@@ -34,8 +62,8 @@ img {
 Document Styles --*/
 
 nav, footer{
-    background-color: #976534f0;
-    color: #e6b476;
+    background-color: #d8a16bf0;
+    color: #997141;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,13 +73,31 @@ nav, footer{
 nav div {
     display:flex;
 }
+.text {
+    flex-wrap: ;
+}
 .logo {
     align-items: center;
     gap: 2rem;
 }
 .links {
-    align-items: center;
+    color: #acae62;
+    justify-content: space-between;
+    flex: content;
+    text-align: justify;
+    gap: 4rem;
     gap: 1rem;
+    background: var(--acc);
+    color: var(--lbg);
+    width: 10rem;
+    padding: 1rem 10rem;
+    font-weight: 600;
+    text-transform: lowercase;
+    margin: 2rem auto;
+    border-radius: 1rem;
+}
+.logo {
+    justify-content: center;
 }
 nav img {
     height: 60px;
@@ -71,7 +117,27 @@ div.text {
     flex-direction: column;
     justify-content: center;
 }
+.more-links {
+    background: var(--acc);
+    color: var(--lbg);
+    width: 10rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-weight: 600;
+    text-transform: lowercase;
+    margin: 2rem auto;
+    border-radius: 2rem;
+    border: 4px solid var(--bg);
+    opacity: .8;
+    transition: all .15s ease-in;
 
+}
+.more-links:hover {
+    opacity: 1;
+}
+    
+
+}
 /*-- Media Queries --*/
 
 @media screen and (max-width: 768px) {
