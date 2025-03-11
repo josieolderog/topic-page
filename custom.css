@@ -83,18 +83,11 @@ nav div {
 .links {
     color: #acae62;
     justify-content: space-between;
-    flex: content;
-    text-align: justify;
     gap: 4rem;
     gap: 1rem;
-    background: var(--acc);
     color: var(--lbg);
-    width: 10rem;
-    padding: 1rem 10rem;
     font-weight: 600;
     text-transform: lowercase;
-    margin: 2rem auto;
-    border-radius: 1rem;
 }
 .logo {
     justify-content: center;
