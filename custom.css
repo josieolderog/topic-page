@@ -20,7 +20,6 @@ html {
     font-size: 62.5%;
 }
 body, p {
-    height: 98vh;
     font-size: 1.6rem;
     font-family: "serenity", sans-serif;
     font-weight: 400;
@@ -45,8 +44,8 @@ h1, h2, h3, h4, h5, h6 {font-weight: 600;
 }
 
 img {
-    width: 100%;
-    width: 100%;
+    width: 200%;
+    width: 200%;
     fill: currentColor;
     pointer-events: none;
 }
@@ -69,9 +68,8 @@ nav div {
     gap: 0px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start; /* Keeps items from stretching */
-    gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
 }
 .logo {
     align-items: center;
@@ -92,8 +90,8 @@ nav div {
 .poster {
     display: block;
     margin-right: auto;
-    width: 80%;
-    padding: 3rem;
+    width: 100%;
+    padding: 6rem;
 }
 
 .poster img {
@@ -105,6 +103,20 @@ nav div {
     overflow: hidden;
     display: flex;
     align-items: flex-start;
+}
+.intro {
+    text-align: center;
+    font-family: Monarcha;
+    padding: 15rem;
+    font-size: large;
+    color: #d24a0d;
+}
+.title {
+    font-size: 70pt;
+    text-align: center;
+    color:#acae62;
+    font-family: Monarcha;
+    padding: 10rem;
 }
 nav img {
     height: 60px;
@@ -127,7 +139,7 @@ div.text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 3rem;
+    padding: 6rem;
 }
 .poster:hover {
     opacity: 1; /* Not sure if I want to make poster have hoverstate?*/
@@ -144,7 +156,6 @@ div.text {
     align-self: flex-start;
     color: var(--lbg);
     width: 10rem;
-    padding: 1rem 2rem;
     text-align: center;
     font-weight: 600;
     text-transform: lowercase;
