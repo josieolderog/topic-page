@@ -2,56 +2,67 @@
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
+    <script src="slides.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.typekit.net/lik3ecd.css">
-    <title>Ledges State Park</title>
     <link rel="stylesheet" href="https://use.typekit.net/lik3ecd.css">
     <link rel="stylesheet" href="https://use.typekit.net/lik3ecd.css">
     <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Ledges State Park</title>
 </head>
 
     <body>
-        <nav>
-            <div> 
-        <img src="img/logo.svg" class="logo" sizes="logo">
-    <h1>Ledges State Park</h2>
-        <div>
-            <div class="links">
-            <a href="#">
-                Explore
-                <i class="bi-explore"></i>
-            </a>
-            <a href="#">
-                Events
-                <i class="bi-event"></i>
-            </a>
-            <a href="#">
-                Map</a>
-                <i class="bi-map"></i>
-            </a>
-            <a href="#">
-                Album</a>
-            <search>
-                <i class="bi bi-camera-fill"></i>
-            </search>
-        </div>
+        <nav class="navbar">
+            <div class="nav-left">
+              <img src="img/logo.svg" class="logo" alt="Ledges Logo">
+              <h1>Ledges State Park</h1>
+            </div>
+          
+            <div class="nav-right">
+              <a href="#">Explore <i class="bi bi-compass"></i></a>
+              <a href="#">Events <i class="bi bi-calendar-event"></i></a>
+              <a href="#">Map <i class="bi bi-map"></i></a>
+              <a href="#">Album <i class="bi bi-camera-fill"></i></a>
+            </div>
+          </nav>          
     </nav>
     <section class="slideshow">
         <figure class="slide">
           <img src="https://iowageologicalsurvey.uiowa.edu/sites/iowageologicalsurvey.uiowa.edu/files/styles/ultrawide__1312_x_562/public/2023-02/15-scaled.jpg?h=23f1182e&itok=-T6RLROi"/>
           <figcaption class="figcaption">
-            <h1>Welcome to Ledges State Park<h1r>
-            <p>Central Iowa's Rockiest State Park!</p>
+            <div id="slideshow-container" class="slideshow-wrapper">
+                <div class="slideshow-text">
+                  <h1>Welcome to Ledges State Park</h1>
+                  <p>Central Iowa's Rockiest State Park!</p>
+                </div>
+              
+                <!-- Slides -->
+                <div class="slide-img fade">
+                  <img src="img/slide1.jpg" alt="Slide 1">
+                </div>
+                <div class="slide-img fade">
+                  <img src="img/slide2.jpg" alt="Slide 2">
+                </div>
+                <div class="slide-img fade">
+                  <img src="img/slide3.jpg" alt="Slide 3">
+                </div>
+              
+                <a class="prev" id="prev">&#10094;</a>
+                <a class="next" id="next">&#10095;</a>
+              
+                <div class="dots">
+                  <span class="dot" onclick="currentSlide(0)"></span>
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+        </div>
+
           </figcaption>
         </figure>
     </section>
-    <div>
-        <section class="title">
-            Welcome to Ledges State Park
-        </section>
-    </div>
-    <div>
     <section class="intro">
+        <h1>Enjoy your visit!</h1>
         Ledges State Park is renowned for its distinctive rock formations and breathtaking natural scenery. The park offers a serene retreat for outdoor enthusiasts and nature lovers, with a network of well-maintained trails that wind through rugged terrain and provide panoramic views of the surrounding landscape. 
         <div>
         Whether you're interested in hiking, rock climbing, or simply enjoying a quiet moment immersed in nature, Ledges State Park provides an inviting and memorable experience.</div>
