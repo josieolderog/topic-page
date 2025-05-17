@@ -63,6 +63,7 @@ nav, footer{
 }
 nav div {
     display:flex;
+    text-align: right;
 }
 .text {
     gap: 0px;
@@ -76,13 +77,36 @@ nav div {
     gap: 2rem;
 }
 .links {
-    color: #acae62;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 4rem;
     gap: 1rem;
     color: var(--lbg);
     font-weight: 600;
     text-transform: lowercase;
+}
+.figcaption {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--milight);
+}
+.slide {
+    padding: 0;
+    padding-bottom: 0;
+    margin: 0;
+    opacity: 100%;
+    he
+}
+  .slideshow {
+    position: relative; /*-- this allows children to be position absolutely --*/
+    padding: 0;
+}
+.slide img {
+  box-shadow: 0 1px 8px rgba(0,0,0,.5);
+  max-height: 600px;
+  opacity: 50%;
 }
 .logo {
     justify-content: center;
